@@ -1,0 +1,257 @@
+body {
+	background-color: #233237;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "yantramanav", sans-serif;
+}
+
+h2 {
+	line-height: 50px;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #984b43;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2::after { /*This is the underline */
+	display: block;
+	content: "";
+	height: 1px;
+	width: 250px;
+	background: #eac67a;
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h3 {
+	line-height: 50px;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #984b43;
+}
+
+section {
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+/*Navigation*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  font-family: Anton, sans-serif;
+  position:
+}
+
+.topnav a {
+	float: right;
+	color: #233237;
+	text-align: center;
+	padding: 30px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	cursor: pointer;
+	border: 3px solid transparent;
+	position: top;
+}
+
+.topnav a:hover {
+	color: #eac67a;
+	border: 3px solid #18121e;
+	border-radius: 5%;
+	animation-name: pulse;
+	animation-duration: 0.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	overflow: hidden;
+}
+
+/* Animation pulse */
+@keyframes pulse {
+	0%, 100% {
+		transform: scale(1s);
+		
+	}
+	50% {
+		transform: scale(.8);
+	}
+}
+
+/*Home section styling*/
+
+#home {
+	background: url(../images/pexels-photo.jpg) no-repeat 50% 50%;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	height: auto;
+	padding-top: 200px; /* This is spacer before the Main title logo */
+	padding-bottom: 200px; /* This is spacer after the Main title logo */
+	color: #eac67a;
+	margin: 0 auto;
+}
+
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+	font-variant: small-caps;
+	color: #fff;
+	letter-spacing: 2pt;
+	word-spacing: 2pt;
+	font-size: 3.5em;
+	text-align: center;
+	font-family: yantramanav, sans-serif;
+	line-height: 2;
+	font-weight: 600;
+	border: 3px ridge #984b43;
+	padding: 10px;
+}
+
+/*Development Skills*/
+
+.development {
+	background-color: #233237;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+}
+
+img.resize {
+	width: 200px;
+	height: 150px;
+}
+
+
+
+/*Professional Skills*/
+
+.professional {
+	background-color: #18121e;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+}
+
+/*Human Skills*/
+
+.human {
+	background-color: #233237;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: row;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin: 0px auto;
+}
+
+
+.button {
+	color: #eac67a;
+	cursor: pointer;
+	border: none;
+	font-weight: 600;
+	outline: none;
+	text-align: center;
+	font-family: 'Exo', sans-serif;
+	margin: 0px 10%;
+	padding: 18px 0px;
+	width: 80%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #984b43;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.button:hover {
+	color: #984b43;
+	background-color: #eac67a;
+}
+
+.photo {
+	position: relative;
+	line-height: 0;
+	overflow: hidden;
+	padding:1px;
+	
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: auto;
+    height: auto;
+	padding-right: auto;
+	padding-top: 50px;
+}
+
+.photo-container img {
+ 	max-width: 100%;
+	width: 200px;
+	height: 150;
+}
+
+footer {
+	background-color: #18121e;
+    color: #eac67a;
+	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+}
+
+/* @media queries */
+
+@media all and (max-width:640px) and (min-width:381px) {
+	.head-main {
+		font-size: 28px;
+	}
+}
+
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size: 24px ;
+    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
