@@ -46,7 +46,9 @@ section {
   overflow: hidden;
   background-color: #fff;
   font-family: Anton, sans-serif;
-  position:
+  position: fixed;
+  right: 0px;
+  z-index: 1;
 }
 
 .topnav a {
@@ -125,13 +127,13 @@ section {
 	height: auto;
 	margin: auto;
 	padding: 30px;
+	padding-top: 150px;
 }
 
 img.resize {
 	width: 200px;
 	height: 150px;
 }
-
 
 
 /*Professional Skills*/
@@ -142,12 +144,23 @@ img.resize {
 	height: auto;
 	margin: auto;
 	padding: 30px;
+	padding-top: 150px;
 }
 
 /*Human Skills*/
 
 .human {
 	background-color: #233237;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+	padding-top: 150px;
+}
+
+/*Contact*/
+.contact {
+	background-color: #18121e;
 	width: 100%;
 	height: auto;
 	margin: auto;
@@ -216,8 +229,39 @@ img.resize {
 	height: 150;
 }
 
+/* LinkedIn image*/
+
+.photo-container-2 {
+	text-align: center;
+	margin: 15px auto;
+	width: auto;
+    height: auto;
+	padding-right: auto;
+	padding-top: 50px;
+}
+
+.photo-container-2 img {
+ 	max-width: 100%;
+	width: 50px;
+	height: 50;
+}
+
+.photo-container-2 a {
+	text-decoration: none;
+	color: #984b43;
+	text-align: center;
+	line-height: 10px;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.photo-container-2 a:hover {
+	color: #eac67a;
+}
+
 footer {
-	background-color: #18121e;
+	background-color: #233237;
     color: #eac67a;
 	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
     padding: 20px 50px 20px 50px;
