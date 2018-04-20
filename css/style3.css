@@ -1,0 +1,44 @@
+.topnav {
+  overflow: hidden;
+  background-color: #984b43;
+  font-family: Anton, sans-serif;
+}
+
+.topnav a {
+	float: right;
+	color: #18121e;
+	text-align: center;
+	padding: 30px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	cursor: pointer;
+	transition: transform .5s;
+}
+
+.topnav a:hover {
+  color: #eac67a;
+  transform: scale(1.15);
+}
+
+.border-button {
+  position: relative;
+  margin: 0.em;
+  border: solid 2px transparent;
+  background: none;
+}
+
+.border-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border: solid 3px #18121e;
+  border-radius: 5px;
+  margin: -1;
+  z-index: -1;
+  transition: transform 0.4s linear;
+  transform: scale(0.84);
+}
+
+.border-button:hover::after { transform: scale(.88);
+}

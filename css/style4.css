@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "yantramanav", sans-serif;
 }
 
-/*Section Heading Styling*/
+
 h2 {
 	line-height: 50px;
 	font-weight: 900;
@@ -27,6 +27,53 @@ h2::after { /*This is the underline */
 	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 }
 
+
+h2#devh2 {
+	color: #05386b;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2#devh2::after { /*This is the underline */
+	display: block;
+	content: "";
+	height: 1px;
+	width: 250px;
+	background: #05386b;
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2#profh2 {
+	color: #05386b;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2#profh2::after { /*This is the underline */
+	display: block;
+	content: "";
+	height: 1px;
+	width: 250px;
+	background: #05386b;
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2#humh2 {
+	color: #05386b;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2#humh2::after { /*This is the underline */
+	display: block;
+	content: "";
+	height: 1px;
+	width: 250px;
+	background: #05386b;
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+
 h3 {
 	line-height: 50px;
 	font-weight: 500;
@@ -37,7 +84,6 @@ h3 {
 }
 
 /*feffff old color*/
-/*Section captions for images*/
 h3.img-caption {
   color: #feffff;
 }
@@ -60,7 +106,7 @@ section {
 
 .topnav a {
 	float: right;
-	color: #05386b;
+	color: #233237;
 	text-align: center;
 	padding: 30px 16px;
 	text-decoration: none;
@@ -69,11 +115,10 @@ section {
 	border: 3px solid transparent;
 	position: top;
 }
-/*233237*/
 
 .topnav a:hover {
-	color: #5cdb95;
-	border: 3px solid #05386b;
+	color: #eac67a;
+	border: 3px solid #18121e;
 	border-radius: 5%;
 	animation-name: pulse;
 	animation-duration: 0.6s;
@@ -82,7 +127,6 @@ section {
 	animation-direction: alternate;
 	overflow: hidden;
 }
-/*eac67a, 18121e*/
 
 /* Animation pulse */
 @keyframes pulse {
@@ -285,7 +329,7 @@ img.resize {
 }
 
 .innerbutton {
-	color: #5cdb95;
+	color: #eac67a;
 	cursor: pointer;
 	border: none;
 	font-weight: 600;
@@ -298,13 +342,13 @@ img.resize {
 	font-size: 18px;
 	transition: border-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
-	background-color: #05386b;
+	background-color: #984b43;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 
 .innerbutton:hover {
-	color: #edf5e1;
-	background-color: #0859aa;
+	color: #984b43;
+	background-color: #eac67a;
 }
 
 .photo {
