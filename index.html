@@ -7,39 +7,109 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<!-- /Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=yantramanav" rel="stylesheet">
-	<link rel="shortcut icon" href="./images/Tags.png">
-	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+		<!-- /Bootstrap CSS -->
+		<!-- Other stylesheets -->
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=yantramanav" rel="stylesheet">
+		<!-- /Other stylesheets -->
+
+		<!-- favicon-->
+		<link rel="shortcut icon" href="./images/Tags.png">
+		<!-- /favicon-->
+
 	</head>
 
 	<body>
 
 	<!-- Navigation -->
-		<nav class="topnav">
-			<div class="hvr-pulse-grow">
-				<a href="#contact"class="border-button">Contact</a>
-				<a href="#humskill"class="border-button">Human Skills</a>
-				<a href="#proskill"class="border-button">Professional Skills</a>
-				<a href="#devskill" class="border-button">Development Skills</a>
-				<a href="#home" class="border-button">Home</a>
-			</div>
-		</nav>
-	<!--/Navigation -->
-
-	<!-- Home -->
-		<section id="home">
-			<div class="container">
-				<div class="text-center">
-					<span class="head-main">John Hennessy</span>
+		<nav class="topnav navbar navbar-light">
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="hvr-pulse-grow">
+					<a href="#home" class="border-button">Home</a>
+					<a href="#devskill" class="border-button">Development Skills</a>
+					<a href="#proskill"class="border-button">Professional Skills</a>
+					<a href="#humskill"class="border-button">Interpersonal Skills</a>
+					<a href="#contact"class="border-button">Contact</a>
 				</div>
 			</div>
+		</nav>
+
+
+	<!-- Home -->
+
+
+		<section id="home">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('./images/Computer-photo.jpg')">
+						<div id="header-name">
+							<h1>John Hennessy</h1>
+						</div>
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p>Software Development: Creating Programs to Improve the World</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('./images/Web-Dev.png')">
+						<div id="header-name">
+							<h1>John Hennessy</h1>
+						</div>
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p>Front-end Design with HTML5, CSS3, & JS</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('./images/CircuitBoard-2.jpg')">
+						<section id="header-name">
+							<h1>John Hennessy</h1>
+						</section>
+            <div class="carousel-caption d-none d-md-block">
+              <h3></h3>
+              <p>Hardware to Handle the Complexity of Tomorrow's Software</p>
+            </div>
+          </div>
+					<!-- Slide Four - Set the background image for this slide in the line below -->
+					<div class="carousel-item" style="background-image: url('./images/Software-Dev.png')">
+						<section id="header-name">
+							<h1>John Hennessy</h1>
+						</section>
+						<div class="carousel-caption d-none d-md-block">
+							<h3></h3>
+							<p id="slide-four">Responsive Design is the Future</p>
+						</div>
+					</div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 		</section>
 	<!-- /Home -->
 
@@ -63,7 +133,7 @@
 					<!-- Photo container 2 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img class="resize" src="./images/SQL_logo.png" alt="">
+							<img class="resize" src="./images/SQL.png" alt="">
 							<h3 class="img-caption">SQL</h3>
 							<button type="button" data-toggle="modal" data-target="#myBtn2" class="button1">Skill Summary</button>
 						</div>
@@ -84,7 +154,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img class="resize" src="./images/MSNET_logo.png" alt="">
-							<h3 class="img-caption">C# / MVC</h3>
+							<h3 class="img-caption">C#</h3>
 							<button type="button" data-toggle="modal" data-target="#myBtn4" class="button1">Skill Summary</button>
 						</div>
 					</div>
@@ -101,36 +171,26 @@
 		<div class="container">
 			<h2>Professional Skills</h2>
 			<div class="flex-container">
-			<!-- Photo container 1 -->
+				<!-- Photo container 1 -->
 
-					<div class="photo-container">
-						<div class="photo">
-							<img class="resize" src="./images/dependable.png" alt="">
-							<h3 class="img-caption">Dependable</h3>
-							<button type="button" data-toggle="modal" data-target="#myBtn5" class="button2">Skill Summary</button>
+						<div class="photo-container">
+							<div class="photo">
+								<img class="resize" src="./images/Chessboard.png" alt="">
+								<h3 class="img-caption">Strategic</h3>
+								<button type="button" data-toggle="modal" data-target="#myBtn8" class="button3">Skill Summary</button>
+							</div>
 						</div>
-					</div>
-					<!-- End photo container 1 -->
+						<!-- End photo container 1 -->
 
-					<!-- Photo container 2 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img class="resize" src="./images/like.png" alt="">
-							<h3 class="img-caption">Likable</h3>
-							<button type="button" data-toggle="modal" data-target="#myBtn6" class="button2">Skill Summary</button>
+						<!-- Photo container 2 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img class="resize" src="./images/Handshake.png" alt="">
+								<h3 class="img-caption">Customer-Friendly</h3>
+								<button type="button" data-toggle="modal" data-target="#myBtn9" class="button3">Skill Summary</button>
+							</div>
 						</div>
-					</div>
-					<!-- End photo container 2 -->
-
-					<!-- Photo container 3 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img class="resize" src="./images/communication.png" alt="">
-							<h3 class="img-caption">Communicates Well</h3>
-							<button type="button" data-toggle="modal" data-target="#myBtn7" class="button2">Skill Summary</button>
-						</div>
-					</div>
-					<!-- End photo container 3 -->
+						<!-- End photo container 2 -->
 			</div>
 		</div>
 	</section>
@@ -140,28 +200,39 @@
 	<!-- Human Skills -->
 	<section class="human" id="humskill">
 		<div class="container">
-			<h2>Human Skills</h2>
+			<h2>Interpersonal Skills</h2>
 			<div class="flex-container">
-			<!-- Photo container 1 -->
+				<!-- Photo container 1 -->
 
-					<div class="photo-container">
-						<div class="photo">
-							<img class="resize" src="./images/strategy.png" alt="">
-							<h3 class="img-caption">Strategic</h3>
-							<button type="button" data-toggle="modal" data-target="#myBtn8" class="button3">Skill Summary</button>
+						<div class="photo-container">
+							<div class="photo">
+								<img class="resize" src="./images/Reliable.png" alt="">
+								<h3 class="img-caption">Dependable</h3>
+								<button type="button" data-toggle="modal" data-target="#myBtn5" class="button2">Skill Summary</button>
+							</div>
 						</div>
-					</div>
-					<!-- End photo container 1 -->
+						<!-- End photo container 1 -->
 
-					<!-- Photo container 2 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img class="resize" src="./images/customers.png" alt="">
-							<h3 class="img-caption">Customer-Friendly</h3>
-							<button type="button" data-toggle="modal" data-target="#myBtn9" class="button3">Skill Summary</button>
+						<!-- Photo container 2 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img class="resize" src="./images/like-4.gif" alt="">
+								<h3 class="img-caption">Likable</h3>
+								<button type="button" data-toggle="modal" data-target="#myBtn6" class="button2">Skill Summary</button>
+							</div>
 						</div>
-					</div>
-					<!-- End photo container 2 -->
+						<!-- End photo container 2 -->
+
+						<!-- Photo container 3 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img class="resize" src="./images/communication.png" alt="">
+								<h3 class="img-caption">Communicates Well</h3>
+								<button type="button" data-toggle="modal" data-target="#myBtn7" class="button2">Skill Summary</button>
+							</div>
+						</div>
+						<!-- End photo container 3 -->
+
 			</div>
 		</div>
 	</section>
@@ -177,8 +248,13 @@
 
 					<div class="photo-container-2">
 						<div class="photo">
-							<a href="https://www.linkedin.com/in/john-hennessy-794a15155/" target="blank"><p>Connect with me on LinkedIn</p></a>
-							<img src="./images/LinkedIn.png" alt="">
+							<!-- <a href="https://www.linkedin.com/in/john-hennessy-794a15155/" target="blank"><p>Connect with me on LinkedIn</p></a> -->
+							<a href="https://www.linkedin.com/in/john-hennessy-794a15155/" target="blank">
+								<img class="contact-photo" src="./images/LinkedIn.png" alt="">
+							</a>
+							<a href="https://github.com/DevJHennessy/Portfolio" target="blank">
+								<img class="contact-photo" src="./images/GitHub.png" alt="">
+							</a>
 						</div>
 					</div>
 				<!-- End photo container 1 -->
@@ -194,15 +270,26 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">HTML, CSS, JS</h5>
+					<!-- <h5 class="modal-title">HTML, CSS, JS</h5> -->
+					<img class="resize modal-center" src="./images/webDev.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5>The Beauty of the Front End!</h5>
+					<br />
+					<p>The potential to create what the user sees and how they interact with content is limitless, thanks to these three powerful languages, and it just keeps getting more fun!</p>
+					<p><strong>I am familiar with:
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Bootstrap4</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Knockout.js</li>
+						<li><a href="https://github.com/DevJHennessy/Tech-Academy-Projects/tree/master/Pizza%20Site" target="_blank">Example</a></li>
+					</strong></ul></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -217,15 +304,20 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">SQL</h5>
+					<img class="resize modal-center" src="./images/SQL.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5>The Power of the Database.</h5>
+					<p>Line</p>
+					<p><strong>I am familiar with:
+					<ul>
+						<li>SQL Server 2014+</li>
+						<li>LINQ to SQL</li>
+						<li><a href="https://github.com/DevJHennessy/Tech-Academy-Projects/tree/master/Sql" target="_blank">Example</a></li>
+					</strong></ul></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -240,15 +332,19 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Git and GitHub</h5>
+					<img class="resize modal-center" src="./images/GITFS_logo.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5>Collaboration and Backup.</h5>
+					<p>Knowing how to use some kind of version control is key to working in teams.</p>
+					<p><strong>I am familiar with:
+					<ul>
+						<li>TFS inside of Visual Studio</li>
+						<li>Git</li>
+					</strong></ul></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -263,15 +359,24 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">C# / Model View Control</h5>
+					<img class="resize modal-center" src="./images/MSNET_logo.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5>Build anything with C#!</h5>
+					<p>The .Net Framework seems to do it all these days.</p>
+					<p><strong>I am familiar with:
+					<ul>
+						<li>C#</li>
+						<li>Entity Framework</li>
+						<li>MVC</li>
+						<li>LINQ</li>
+						<li>Debugging Tools</li>
+						<li>Visual Studio/TFS Integration</li>
+						<li><a href="https://github.com/DevJHennessy/Projects/tree/master/TwentyOneGame" target="_blank">Example</a></li>
+					</strong></ul></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -286,15 +391,23 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">You can count on me!</h5>
+					<img class="resize modal-center" src="./images/Reliable.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5 class="modal-title">You can count on me!</h5>
+					<br />
+					<p>An integral part of functional teams is knowing you can trust and depend on your teammates. </p>
+					<p><strong>Dependability Characteristics:
+						<ul>
+							<li>Always Punctual</li>
+							<li>Attention to Detail</li>
+							<li>Productive</li>
+							<li>Exceptional Follow-through</li>
+						</ul>
+					</strong></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -309,15 +422,23 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Friendly.</h5>
+					<img class="resize modal-center" src="./images/like-4.gif" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5 class="modal-title">Personable.</h5>
+					<br />
+					<p>We spend a lot of time with our co-workers, and it's important to not get on each other's nerves. Being likeable comes naturally to me as I'm highly self-aware: I chew with my mouth closed, I focus on positivity in the workplace, and make others feel welcome.</p>
+					<p><strong>Likeable Characteristics:
+						<ul>
+							<li>Respectful of Others</li>
+							<li>Great Listener</li>
+							<li>Positive Outlook</li>
+							<li>Hygienic</li>
+						</ul>
+					</strong></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -332,15 +453,22 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">The power of words.</h5>
+					<img class="resize modal-center" src="./images/communication.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5 class="modal-title">The Power of Words.</h5>
+					<br />
+					<p>The key to communication is listening, and I am an excellent listener. However, when the need arises, I can clearly express myself.</p>
+					<p><strong>Communication Characteristics:
+						<ul>
+							<li>Attentive Listener</li>
+							<li>Can Speak Expressively</li>
+							<li>Open-minded and Polite</li>
+						</ul>
+					</strong></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -355,15 +483,22 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Putting the puzzle together.</h5>
+					<img class="resize modal-center" src="./images/Chessboard.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5 class="modal-title">Planning the next step.</h5>
+					<br />
+					<p>A goal is pointless if you don't have a plan to achieve it. My ability to outline and think of the overall picture helps attain the goal as it should be.</p>
+					<p><strong>Strategic Experience:
+						<ul>
+							<li>Wrote Detailed Plot Outlines</li>
+							<li>Wrote Extensive Character Backgrounds</li>
+							<li>Designed and Executed Marketing Plans</li>
+						</ul>
+					</strong></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -378,15 +513,22 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Customer Interaction.</h5>
+					<img class="resize modal-center" src="./images/Handshake.png" alt="">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
-				<p> This is a skill I have!</p>
+					<h5 class="modal-title">Customer Interaction? No Problem!</h5>
+					<br />
+					<p>As a dog runner, I communicated with clients on a daily basis to meet their needs, with the aim that customers have a positive experience with me and the organization. As a professional writer, I constantly interacted with reviewers and fans in a professional manner.</p>
+					<p><strong>Customer Experience:
+						<ul>
+							<li>Problem Resolution</li>
+							<li>Demonstrated Patience and Attentiveness</li>
+							<li>Honed Professional Communication Skills</li>
+						</ul>
+					</strong></p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="innerbutton" data-dismiss="modal">Close</button>
@@ -409,7 +551,10 @@
 		trigger: 'focus'
 		})
 	</script>
-
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	</body>
 

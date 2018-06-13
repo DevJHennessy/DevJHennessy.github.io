@@ -1,8 +1,8 @@
 body {
-	background-color: #233237;
+	/*background-color: #233237;*/
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, li {
 	font-family: "yantramanav", sans-serif;
 }
 
@@ -17,7 +17,8 @@ h2 {
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
-h2::after { /*This is the underline */
+/*This is the underline */
+h2::after {
 	display: block;
 	content: "";
 	height: 1px;
@@ -43,11 +44,25 @@ h3.img-caption {
 }
 
 section {
-	padding-top: 15px;
-	margin-top: 15px;
+	/*padding-top: 15px;
+	margin-top: 15px;*/
 }
 
 /*Navigation*/
+
+#header-name {
+	color: #fff;
+	text-transform: uppercase;
+	margin-left: 1%;
+	position: absolute;
+	top: 30%;
+}
+
+#header-name h1 {
+	font-family: "Jaldi", sans-serif;
+	font-weight: 700;
+	text-shadow: 1px 3px rgba(0, 0, 0, 0.8);
+}
 
 .topnav {
   overflow: hidden;
@@ -55,19 +70,20 @@ section {
   font-family: Anton, sans-serif;
   position: fixed;
   right: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .topnav a {
-	float: right;
+	display: flex;
+	/* float: left; */
 	color: #05386b;
 	text-align: center;
 	padding: 30px 16px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
 	cursor: pointer;
 	border: 3px solid transparent;
-	position: top;
+	position: top right;
 }
 /*233237*/
 
@@ -82,7 +98,20 @@ section {
 	animation-direction: alternate;
 	overflow: hidden;
 }
-/*eac67a, 18121e*/
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+		width: 70%;
+		margin: auto;
+}
+
+.carousel-caption, .d-none, .d-md-block {
+	display: block!important;
+}
 
 /* Animation pulse */
 @keyframes pulse {
@@ -98,7 +127,7 @@ section {
 /*Home section styling*/
 
 #home {
-	background: url(../images/pexels-photo.jpg) no-repeat 50% 50%;
+	/*background: url(../images/Computer-photo.jpg) no-repeat 50% 50%;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -108,9 +137,26 @@ section {
 	display: block;
 	height: auto;
 	padding-top: 200px; /* This is spacer before the Main title logo */
-	padding-bottom: 200px; /* This is spacer after the Main title logo */
-	color: #eac67a;
-	margin: 0 auto;
+	/*padding-bottom: 200px; /* This is spacer after the Main title logo */
+	/*color: #eac67a;
+	margin: 0 auto;*/
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	margin: auto;
+}
+
+#slide-four {
+	position: relative;
+	top: 25px;
+	color: red;
 }
 
 .head-main {
@@ -176,6 +222,16 @@ img.resize {
 	padding: 30px;
 }
 
+.contact-photo {
+	opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.contact-photo:hover {
+  opacity: 0.6;
+}
+
 .container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -217,7 +273,7 @@ img.resize {
 }
 
 .button2 {
-	color: #379683;
+	color: #5cdb95;
 	cursor: pointer;
 	border: none;
 	font-weight: 600;
@@ -240,7 +296,7 @@ img.resize {
 }
 
 .button3 {
-	color: #5cdb95;
+	color: #379683;
 	cursor: pointer;
 	border: none;
 	font-weight: 600;
@@ -307,6 +363,11 @@ img.resize {
 	background-color: #0859aa;
 }
 
+.close {
+	position: fixed;
+	top: 0;
+}
+
 .photo {
 	position: relative;
 	line-height: 0;
@@ -330,7 +391,7 @@ img.resize {
 	height: 150;
 }
 
-/* LinkedIn image*/
+/* Contact images*/
 
 .photo-container-2 {
 	text-align: center;
@@ -344,8 +405,9 @@ img.resize {
 
 .photo-container-2 img {
  	max-width: 100%;
-	width: 50px;
-	height: 50;
+	width: 75px;
+	height: 75px;
+	padding: 5px;
 }
 
 .photo-container-2 a {
@@ -362,6 +424,11 @@ img.resize {
 	color: #05386b;
 }
 
+.modal-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 footer {
 	background-color: #05386b;
   color: #5cdb95;
@@ -372,32 +439,31 @@ footer {
 
 /* @media queries */
 
-@media all and (max-width:640px) and (min-width:381px) {
-	.head-main {
-		font-size: 28px;
+@media only screen and (min-width: 35em) {
+	.topnav a {
+		font-size: 16px;
 	}
+
 }
 
-@media all and (max-width:381px) and (min-width:200px) {
-    .head-main {
-        font-size: 24px ;
-    }
+@media only screen and (min-width: 50em) {
+	.topnav a {
+		font-size: 18px;
+		float: left;
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	.collapse {
+		display: flex;
+	}
+
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
+/* @media all and (max-width:381px) and (min-width:200px) {
+
+} */
