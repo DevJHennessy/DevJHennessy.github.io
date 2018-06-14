@@ -55,7 +55,7 @@ section {
 	text-transform: uppercase;
 	margin-left: 1%;
 	position: absolute;
-	top: 30%;
+	top: 0.5%;
 }
 
 #header-name h1 {
@@ -66,17 +66,17 @@ section {
 
 .topnav {
   overflow: hidden;
-  background-color: #fff;
+  background-color: #05386b;
   font-family: Anton, sans-serif;
   position: fixed;
   right: 0px;
   z-index: 2;
+	text-align: center;
 }
 
 .topnav a {
 	display: flex;
-	/* float: left; */
-	color: #05386b;
+	color: #5cdb95;
 	text-align: center;
 	padding: 30px 16px;
 	text-decoration: none;
@@ -85,11 +85,11 @@ section {
 	border: 3px solid transparent;
 	position: top right;
 }
-/*233237*/
+/*233237 379683*/
 
 .topnav a:hover {
 	color: #5cdb95;
-	border: 3px solid #05386b;
+	border: 3px solid #379683;
 	border-radius: 5%;
 	animation-name: pulse;
 	animation-duration: 0.6s;
@@ -98,6 +98,7 @@ section {
 	animation-direction: alternate;
 	overflow: hidden;
 }
+
 
 .carousel-indicators {
 	z-index: 1;
@@ -120,7 +121,7 @@ section {
 
 	}
 	50% {
-		transform: scale(.8);
+		transform: scale(.9);
 	}
 }
 
@@ -458,6 +459,10 @@ footer {
 
 	.collapse {
 		display: flex;
+	}
+
+	#header-name {
+		top: 30%;
 	}
 
 }
