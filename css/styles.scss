@@ -29,7 +29,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 // General Font styling:
@@ -135,7 +135,7 @@ nav {
 }
 
 main {
-  background: url(../images/WebsiteBackground.jpg);
+  background: url(../images/WebsiteBackground-sm.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -456,6 +456,19 @@ footer {
 @media only screen and (min-width: 420px) {
   h2 {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    background: url(../images/WebsiteBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
   }
 }
 
