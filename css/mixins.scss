@@ -1,0 +1,9 @@
+// Mixins:
+
+@mixin linGunMetalGradient() {
+  background-image: linear-gradient($gunMetalGray, $darkerGunMetal);
+}
+
+@mixin radGunMetalGradient() {
+  background-image: radial-gradient($gunMetalGray, $darkerGunMetal);
+}
