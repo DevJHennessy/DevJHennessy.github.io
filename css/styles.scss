@@ -453,6 +453,12 @@ footer {
 
 // Media queries:
 
+@media only screen and (min-width: 420px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   .button--tamaya {
@@ -466,17 +472,10 @@ footer {
     display: none;
   }
 
-  .carousel-item {
-    height: 40vh;
-  }
-
   .carousel-control-next, .carousel-control-prev {
     top: 20%;
   }
 
-}
-
-@media only screen and (min-width: 768px) {
   .carousel-item {
     height: 55vh;
   }
