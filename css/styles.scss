@@ -25,11 +25,12 @@ $darkerGunMetal: #161b1d;
 
 // Body
 body {
-  background: url(../images/Night-Sky.jpg);
+  background-image: url(../images/Night-Sky.jpg);
+  // background-size: contain;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 // General Font styling:
@@ -457,9 +458,7 @@ footer {
   h2 {
     font-size: 20px;
   }
-}
 
-@media only screen and (min-width: 600px) {
   main {
     background: url(../images/WebsiteBackground.jpg);
     background-size: cover;
@@ -470,7 +469,21 @@ footer {
     margin: 0 auto;
     height: auto;
   }
+
 }
+
+// @media only screen and (min-width: 600px) {
+//   main {
+//     background: url(../images/WebsiteBackground.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: repeat;
+//     background-attachment: fixed;
+//     width: 90%;
+//     margin: 0 auto;
+//     height: auto;
+//   }
+// }
 
 @media only screen and (min-width: 768px) {
 
