@@ -268,6 +268,54 @@ img.resize {
 	margin: 0px auto;
 }
 
+.fa-envelope-square {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  &:hover {
+  opacity: 0.6;
+  }
+}
+
+.fa-envelope-square::before {
+  color: $headingColor;
+  font-size: 60px;
+  vertical-align: super;
+  padding: 5px;
+}
+
+.fa-linkedin {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  &:hover {
+  opacity: 0.6;
+  }
+}
+
+.fa-linkedin::before {
+  color: $headingColor;
+  font-size: 60px;
+  vertical-align: super;
+  padding: 5px;
+}
+
+.fa-github {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  &:hover {
+  opacity: 0.6;
+  }
+}
+
+.fa-github::before {
+  color: $headingColor;
+  font-size: 60px;
+  vertical-align: super;
+  padding: 5px;
+}
+
 /*Buttons*/
 
 .button1 {
@@ -281,7 +329,7 @@ img.resize {
 	margin: 0px 10%;
 	padding: 18px 0px;
 	width: 80%;
-	font-size: 14px;
+	font-size: 12px;
 	transition: border-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
   @include linGunMetalGradient();
@@ -290,8 +338,6 @@ img.resize {
 
 .button1:hover {
 	color: #fff;
-	// background-color: #0859aa;
-  // background-image: linear-gradient(to top, $gunMetalGray, $gunMetalGray);
   @include radGunMetalGradient();
 
 }
@@ -307,7 +353,7 @@ img.resize {
 	margin: 0px 10%;
 	padding: 18px 0px;
 	width: 80%;
-	font-size: 14px;
+	font-size: 12px;
 	transition: border-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
 	@include linGunMetalGradient();
@@ -330,7 +376,7 @@ img.resize {
 	margin: 0px 10%;
 	padding: 18px 0px;
 	width: 80%;
-	font-size: 14px;
+	font-size: 12px;
 	transition: border-color 0.3s color 0.3s background-color 0.3s;
 	border-radius: 7px;
 	@include linGunMetalGradient();
@@ -454,6 +500,20 @@ footer {
 }
 
 // Media queries:
+
+@media only screen and (min-width: 360px) {
+  .button1 {
+    font-size: 14px;
+  }
+
+  .button2 {
+    font-size: 14px;
+  }
+
+  .button3 {
+    font-size: 14px;
+  }
+}
 
 @media only screen and (min-width: 420px) {
   h2 {
