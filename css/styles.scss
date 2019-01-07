@@ -132,8 +132,21 @@ nav {
 .fas, fa-bars {
   color: $mainColor;
   &:before {
-    vertical-align: middle;
+    vertical-align: sub;
   }
+}
+
+// Changing the Hamburger icon to X and back to Hamburger
+[data-toggle="collapse"] .fas:before { // Hamburger state before
+  content: "\f0c9";
+}
+
+[aria-expanded="true"] .fas:before { // Change to X when expanded is true
+  content: "\f00d";
+}
+
+[data-toggle="collapse"].collapsed .fas:before { // Change back to Hamburger
+  content: "\f0c9";
 }
 
 main {
@@ -513,6 +526,7 @@ footer {
   .button3 {
     font-size: 14px;
   }
+
 }
 
 @media only screen and (min-width: 420px) {
