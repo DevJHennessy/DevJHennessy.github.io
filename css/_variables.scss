@@ -1,0 +1,28 @@
+// main: styles.scss
+
+// Font Variables:
+$navFont: Krub;
+$mainFont: K2D, sans-serif;
+$photoHeadingFont: Chakra Petch;
+$modalHeadingFont: yantramanav;
+@font-face {
+  font-family: Orion;
+  src: url(../fonts/Orion-Pax.ttf);
+}
+
+// Colors:
+// #2a3439f2 Gun metal 95 opacity
+$mainColor: #3fff22;
+$gunMetalGray: #2a3439;
+$headingColor: #4dd8ff;
+$darkerGunMetal: #161b1d;
+
+
+// Mixins:
+@mixin linGunMetalGradient() {
+  background-image: linear-gradient($gunMetalGray, $darkerGunMetal);
+}
+
+@mixin radGunMetalGradient() {
+  background-image: radial-gradient($gunMetalGray, $darkerGunMetal);
+}

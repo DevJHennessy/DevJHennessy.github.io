@@ -1,25 +1,7 @@
 // Imports:
 @import "init.scss";
 @import "buttons.scss";
-@import "mixins.scss";
-
-
-// Font Variables:
-$navFont: Krub;
-$mainFont: K2D, sans-serif;
-$photoHeadingFont: Chakra Petch;
-$modalHeadingFont: yantramanav;
-@font-face {
-  font-family: Orion;
-  src: url(../fonts/Orion-Pax.ttf);
-}
-
-// Colors:
-// #2a3439f2 Gun metal 95 opacity
-$mainColor: #3fff22;
-$gunMetalGray: #2a3439;
-$headingColor: #4dd8ff;
-$darkerGunMetal: #161b1d;
+@import "variables.scss";
 
 
 
@@ -76,7 +58,6 @@ h3 {
 	text-align: center;
   font-family: $photoHeadingFont;
   letter-spacing: 2px;
-	// color: #edf5e1;
 }
 
 .img-caption {
@@ -491,11 +472,15 @@ img.resize {
 }
 
 .modal-body {
+  p {
+    line-height: 1.3;
+  }
   ul {
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
     li {
+      margin: .5rem 0;
       font-family: $navFont;
     }
   }
@@ -512,7 +497,8 @@ footer {
   margin-right: auto;
 }
 
-// Media queries:
+
+// MEDIA QUERIES:
 
 @media only screen and (min-width: 360px) {
   .button1 {
