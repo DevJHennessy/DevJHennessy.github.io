@@ -1,0 +1,31 @@
+// main: styles.scss
+
+/* BODY */
+body {
+  background-image: url(../images/Night-Sky-Portfolio1600.jpg);
+}
+
+/* NAVIGATION */
+nav {
+  .button--tamaya {
+  	min-width: 20%;
+  }
+  .collapse:not(.show) {
+      display: inline;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* MAIN */
+main {
+
+  /* Slick Slider */
+  .caption {
+    padding-top: 125px;
+    font-size: 3vh;
+  } // End Slider
+
+}

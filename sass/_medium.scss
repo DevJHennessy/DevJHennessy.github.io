@@ -1,0 +1,55 @@
+// main: styles.scss
+
+/* BODY */
+body {
+  background-image: url(../images/Night-Sky-Portfolio1024.jpg);
+	background-size: cover;
+}
+
+
+/* MAIN */
+main {
+	background: url(../images/Catwalk1008.jpg);
+	background-size: contain;
+	// background-position: center;
+	background-position: top;
+	background-repeat: repeat;
+	// background-attachment: fixed;
+	background-attachment: scroll;
+
+
+	/*Section Heading Styling*/
+	h2 {
+		line-height: 50px;
+		font-weight: 900;
+		font-size: 30px;
+		text-transform: uppercase;
+		text-align: center;
+		color: $headingColor;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+	}
+
+	/*This is the underline */
+	h2::after {
+		display: block;
+		content: "";
+		height: 1px;
+		width: 250px;
+		background: $headingColor;
+		margin: 5px auto 40px;
+		box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+	}
+	// END Section Styling
+
+  	/* Buttons */
+    .button {
+      font-size: 18px;
+    }// End Buttons
+
+  	/* Slick Slider */
+    .caption {
+      padding-top: 75px;
+      font-size: 2vh;
+    } // End Slider
+
+}// END MAIN
