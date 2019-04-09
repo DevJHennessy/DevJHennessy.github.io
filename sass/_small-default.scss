@@ -155,6 +155,43 @@ main {
   }
 }
 
+/* Design Section */
+#designImagesHeading {
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.design-photo-container {
+	text-align: center;
+	margin: 15px auto;
+	width: auto;
+  height: auto;
+	padding-right: auto;
+	padding-top: 50px;
+  img {
+    max-width: 100%;
+    width: auto;
+    height: 100px;
+  }
+}
+
+.photo-design.photo {
+	border-radius: 8px;
+	border:1px solid rgba(77, 216, 255, 0.3);
+	img {
+		transition: transform .5s;
+		transform-origin: 50% 50%;
+	}
+	&:hover img {
+		transform: scale(1.1);
+	}
+}
+
+/* Design Modals */
+
+
+
 /* Greeting Section */
 section#greeting {
 	width: 80%;
@@ -181,9 +218,9 @@ section#greeting {
 }
 
 
-/*Development, Professional, and Interpersonal(human) Skills */
+/*Development, Design, Professional, and Interpersonal(human) Skills */
 
-section.development, section.professional, section.human, {
+section.development, section.design, section.professional, section.human, {
   @include radGunMetalGradient();
 	width: 80%;
 	height: auto;
